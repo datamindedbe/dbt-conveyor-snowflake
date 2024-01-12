@@ -3,7 +3,13 @@ from setuptools import find_namespace_packages, setup
 
 package_name = "dbt-conveyor-snowflake"
 # make sure this always matches dbt/adapters/{adapter}/__version__.py
-description = """The ConveyorSnowflake adapter plugin for dbt"""
+description = """The ConveyorSnowflake adapter plugin for dbt
+
+This adapter for DBT allows you to authenticate to Snowflake inside of a Conveyor IDE.
+For more information on how to use this plugin check out our how-to-guide:
+
+https://docs.conveyordata.com/how-to-guides/conveyor-ides/dbt-snowflake
+"""
 
 setup(
     name=package_name,
