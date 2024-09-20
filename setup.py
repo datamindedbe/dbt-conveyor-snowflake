@@ -29,8 +29,8 @@ setup(
     packages=find_namespace_packages(include=["dbt", "dbt.*"]),
     include_package_data=True,
     install_requires=[
-        "dbt-core~=1.7.0",
-        "dbt-snowflake~=1.7.0",
+        "dbt-core~=1.8.0",
+        "dbt-snowflake~=1.8.0",
     ],
     setup_requires=["setuptools-git-versioning<2"],
 )
