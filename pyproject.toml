@@ -2,5 +2,32 @@
 requires = ["setuptools>=61", "wheel", "setuptools-git-versioning<2"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "dbt-conveyor-snowflake"
+dynamic = ["version"]
+description = "The ConveyorSnowflake adapter plugin for dbt"
+readme = "README.md"
+authors = [{ name = "Stijn De Haes", email = "stijn.dehaes@dataminded.be" }]
+requires-python = ">=3.10"
+dependencies = [
+    "dbt-core~=1.11.12",
+    "dbt-snowflake~=1.11.6",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+
+[project.urls]
+Homepage = "https://github.com/datamindedbe/dbt-conveyor-snowflake"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = true
+include = ["dbt", "dbt.*"]
+
 [tool.setuptools-git-versioning]
 enabled = true
