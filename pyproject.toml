@@ -10,8 +10,8 @@ readme = "README.md"
 authors = [{ name = "Stijn De Haes", email = "stijn.dehaes@dataminded.be" }]
 requires-python = ">=3.10"
 dependencies = [
-    "dbt-core~=1.11.12",
-    "dbt-snowflake~=1.11.6",
+    "dbt-core~=1.12.5",
+    "dbt-snowflake~=1.12.1",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
